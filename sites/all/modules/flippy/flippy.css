@@ -1,0 +1,18 @@
+div.node-teaser .flippy {
+  display:none;
+}
+div.flippy {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+div.flippy .previous {
+  float:left;
+}
+
+div.flippy .next {
+  float: right;
+  margin-right: 0;
+}

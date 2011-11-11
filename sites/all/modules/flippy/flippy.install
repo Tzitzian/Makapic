@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Custom pagers install file.
+ */
+
+/**
+ * Remove the internal caching feature, as Views now supports caching of query results.
+ */
+function flippy_uninstall() {
+  // We should delete variables and stuff and things.
+}

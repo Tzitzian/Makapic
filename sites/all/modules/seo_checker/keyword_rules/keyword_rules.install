@@ -1,0 +1,21 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Installer of the keyword based rules module for the SEO Checker.
+ *
+ */
+
+/**
+ * Implements hook_install().
+ */
+function keyword_rules_install() {
+  $weight = db_query('SELECT weight FROM {system} WHERE name = "seo_checker"')->fetchField();
+  db_update('system')
+    ->fields(array(
+      'weight' => $weight+1
+    ))
+    ->condition('name', 'keyword_rules', '=')
+    ->execute();
+}
