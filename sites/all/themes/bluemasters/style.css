@@ -675,4 +675,6 @@ span#site-name {
   float:right;
 }
 
-
+.view-related-articles img {
+  margin-top: 10px;
+}
